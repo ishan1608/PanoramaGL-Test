@@ -4,8 +4,8 @@
     "keep": "all",
     "images":
     {
-        "preview": "quito1_sp",
-        "image": "quito1_s2"
+        "preview": "casabella_hall_preview",
+        "image": "casabella_hall_2048"
     },
     "camera":
     {

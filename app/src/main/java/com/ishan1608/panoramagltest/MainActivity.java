@@ -63,7 +63,7 @@ public class MainActivity extends PLView
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        this.setListener(new PLViewListener()
+        /*this.setListener(new PLViewListener()
         {
             @Override
             public void onDidClickHotspot(PLIView view, PLIHotspot hotspot, CGPoint screenPoint, PLPosition scene3DPoint)
@@ -106,7 +106,7 @@ public class MainActivity extends PLView
             {
                 setControlsEnabled(true);
             }
-        });
+        });*/
     }
 
     /**
@@ -121,7 +121,7 @@ public class MainActivity extends PLView
         ViewGroup mainView = (ViewGroup)this.getLayoutInflater().inflate(R.layout.activity_main, null);
         //Add 360 view
         mainView.addView(contentView, 0);
-        //Spinner control
+        /*//Spinner control
         mPanoramaTypeSpinner = (Spinner)mainView.findViewById(R.id.spinner_panorama_type);
         ArrayAdapter<?> adapter = ArrayAdapter.createFromResource(this, R.array.panorama_types, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -138,8 +138,9 @@ public class MainActivity extends PLView
             public void onNothingSelected(AdapterView<?> parentView)
             {
             }
-        });
-        //Zoom controls
+        });*/
+        loadSpherical2FromJson();
+        /*//Zoom controls
         mZoomControls = (ZoomControls)mainView.findViewById(R.id.zoom_controls);
         mZoomControls.setOnZoomInClickListener(new OnClickListener()
         {
@@ -160,14 +161,14 @@ public class MainActivity extends PLView
                 if(camera != null)
                     camera.zoomOut(true);
             }
-        });
+        });*/
         //Return root content view
         return super.onContentViewCreated(mainView);
     }
 
     /**utility methods*/
 
-    private void setControlsEnabled(final boolean isEnabled)
+    /*private void setControlsEnabled(final boolean isEnabled)
     {
         this.runOnUiThread(new Runnable()
         {
@@ -182,7 +183,7 @@ public class MainActivity extends PLView
                 }
             }
         });
-    }
+    }*/
 
     /**load methods*/
 
@@ -190,7 +191,7 @@ public class MainActivity extends PLView
      * Load panorama image manually
      * @param index Spinner position where 0 = cubic, 1 = spherical2, 2 = spherical, 3 = cylindrical
      */
-    @SuppressWarnings("unused")
+    /*@SuppressWarnings("unused")
     private void loadPanorama(int index)
     {
         try
@@ -252,13 +253,13 @@ public class MainActivity extends PLView
         {
             Toast.makeText(this.getApplicationContext(), "Error: " + e, Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
     /**
      * Load panorama image using JSON protocol
      * @param index Spinner position where 0 = cubic, 1 = spherical2, 2 = spherical, 3 = cylindrical
      */
-    private void loadPanoramaFromJSON(int index)
+    /*private void loadPanoramaFromJSON(int index)
     {
         try
         {
@@ -282,6 +283,19 @@ public class MainActivity extends PLView
             }
             if(loader != null)
                 this.load(loader, true, new PLTransitionBlend(2.0f));
+        }
+        catch(Throwable e)
+        {
+            Toast.makeText(this.getApplicationContext(), "Error: " + e, Toast.LENGTH_SHORT).show();
+        }
+    }*/
+
+    private void loadSpherical2FromJson() {
+        try
+        {
+            PLILoader loader;
+            loader = new PLJSONLoader("res://raw/json_spherical2");
+            this.load(loader, true, new PLTransitionBlend(2.0f));
         }
         catch(Throwable e)
         {
