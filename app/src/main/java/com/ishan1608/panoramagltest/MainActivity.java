@@ -20,7 +20,7 @@ public class MainActivity extends PLView
         //Load panorama
         PLSpherical2Panorama panorama = new PLSpherical2Panorama();
         panorama.getCamera().lookAt(30.0f, 90.0f);
-        panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.raw.spherical_pano), false));
+        panorama.setImage(new PLImage(PLUtils.getBitmap(this, R.raw.casabella_hall_2048), false));
         this.setPanorama(panorama);
     }
 
