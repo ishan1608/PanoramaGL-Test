@@ -1,0 +1,6 @@
+apply plugin: 'java'
+
+dependencies {
+    compile files('libs/commons-httpclient-3.1.jar')
+    compile files('libs/android.jar')
+}
