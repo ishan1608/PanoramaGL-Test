@@ -1,0 +1,35 @@
+{
+  // "urlBase": "res://raw",
+  "urlBase": "http://",
+  "type": "spherical2",
+  "keep": "all",
+  "images":
+  {
+    // "preview": "casabella_hall_preview",
+    // "image": "casabella_hall_2048"
+    "preview": "statichost.herokuapp.com/panoramagl/casabella_hall_preview.jpg",
+    "image": "statichost.herokuapp.com/panoramagl/casabella_hall_2048.jpg"
+  },
+  "camera":
+  {
+    "keep": "all|~atvRange|~rotation|~fov",
+    "atvMin": -90.0,
+    "atvMax": 90.0,
+    "vLookAt": 0.0,
+    "hLookAt": 170.0
+  },
+  "hotspots":
+  [
+    {
+      "id": 1,
+      "atv": 0.0,
+      "ath": 170.0,
+      "width": 0.05,
+      "height": 0.05,
+      "image": "hotspot",
+      "alpha": 0.8,
+      "overAlpha": 1.0,
+      "onClick": "lookAt(0.0, 90.0, true);"
+    }
+  ]
+}
