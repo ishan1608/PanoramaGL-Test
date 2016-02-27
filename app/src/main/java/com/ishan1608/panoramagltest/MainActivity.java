@@ -49,6 +49,7 @@ public class MainActivity extends PLView
         {
             PLILoader loader;
             loader = new PLJSONLoader("res://raw/json_spherical2");
+//             loader = new PLJSONLoader("http://statichost.herokuapp.com/panoramagl/json_spherical2.json");
             this.load(loader, true, new PLTransitionBlend(2.0f));
         }
         catch(Throwable e)
