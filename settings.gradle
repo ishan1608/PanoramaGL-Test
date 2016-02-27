@@ -1,1 +1,1 @@
-include ':app', 'lib_panorama'
+include ':app', ':lib_panorama'
