@@ -27,6 +27,7 @@
       "width": 0.05,
       "height": 0.05,
       "image": "raw/hotspot",
+//      "image": "statichost.herokuapp.com/panoramagl/hotspot.png",
       "alpha": 0.8,
       "overAlpha": 1.0,
       "onClick": "lookAt(0.0, 90.0, true);"
