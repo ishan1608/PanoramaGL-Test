@@ -38,8 +38,8 @@ public class MainActivity extends PLView
         //Add 360 view
         mainView.addView(contentView, 0);
 
-//        loadSpherical2LocalJson();
-        loadSpherical2InternetJson();
+        loadSpherical2LocalJson();
+//        loadSpherical2InternetJson();
 //        loadSpherical2ImageFromJava();
 
         //Return root content view
@@ -60,6 +60,8 @@ public class MainActivity extends PLView
                 @Override
                 public void didComplete(PLILoader loader) {
                     Log.d(TAG, "Loader complete");
+                    setScrollingEnabled(false);
+                    stopSensorialRotation();
                 }
 
                 @Override

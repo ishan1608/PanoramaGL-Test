@@ -32,5 +32,34 @@
       "overAlpha": 1.0,
       "onClick": "lookAt(0.0, 90.0, true);"
     }
-  ]
+  ],
+  "reset":					//Reset section <Optional>
+  {
+    "enabled": true,			//Enable reset feature [true, false] <Optional>
+    "numberOfTouches": 3,			//Number of touches to reset <Optional>
+    "shake":				//Shake reset section <Optional>
+    {
+      "enabled": false,		//Enable shake reset [true, false] <Optional>
+      "threshold": 2000		//Shake threshold <Optional>
+    }
+  },
+  "scrolling":				//Scrolling section <Optional>
+  {
+    "enabled": false,			//Enable scrolling feature [true, false] <Optional>
+    "minDistanceToEnableScrolling": 30	//Minimum distance to enable scrolling in pixels <Optional>
+  },
+  "inertia":					//Inertia section <Optional>
+  {
+    "enabled": false,			//Enable inertia feature [true, false] <Optional>
+    "interval": 2				//Inertia's interval in seconds <Optional>
+  },
+  "accelerometer":				//Accelerometer section <Optional>
+  {
+    "enabled": false,			//Enable the accelerometer feature [true, false] <Optional>
+    "interval": 0.016667,			//Update interval of accelerometer (this value must be calculated as 1/frequency) <Optional>
+    "sensitivity": 10.0,			//Sensitivity of the accelerometer <Optional>
+    "leftRightEnabled": true,		//Enable the movement (left/right) <Optional>
+    "upDownEnabled": false			//Enable the movement (up/down) <Optional>
+  },
+  "sensorialRotation": true			//Automatic rotation using sensors [true, false] <Optional>
 }
