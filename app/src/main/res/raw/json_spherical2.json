@@ -5,8 +5,8 @@
   "keep": "all",
   "images":
   {
-     "preview": "raw/casabella_hall_preview",
-     "image": "raw/casabella_hall_2048"
+    "preview": "raw/casabella_hall_preview",
+    "image": "raw/casabella_hall_2048"
 //    "preview": "statichost.herokuapp.com/panoramagl/casabella_hall_preview.jpg",
 //    "image": "statichost.herokuapp.com/panoramagl/casabella_hall_2048.jpg"
   },
