@@ -1,14 +1,14 @@
 {
-//  "urlBase": "res://",
-    "urlBase": "http://",
+  "urlBase": "res://",
+  //  "urlBase": "http://",
   "type": "spherical2",
   "keep": "all",
   "images":
   {
-//    "preview": "raw/casabella_hall_preview",
-//    "image": "raw/casabella_hall_2048"
-      "preview": "statichost.herokuapp.com/panoramagl/casabella_hall_preview.jpg",
-      "image": "statichost.herokuapp.com/panoramagl/casabella_hall_2048.jpg"
+    "preview": "raw/casabella_hall_preview",
+    "image": "raw/casabella_hall_2048"
+    //    "preview": "statichost.herokuapp.com/panoramagl/casabella_hall_preview.jpg",
+    //    "image": "statichost.herokuapp.com/panoramagl/casabella_hall_2048.jpg"
   },
   "camera":
   {
@@ -26,8 +26,8 @@
       "ath": 170.0,
       "width": 0.05,
       "height": 0.05,
-//      "image": "raw/hotspot",
-      "image": "statichost.herokuapp.com/panoramagl/hotspot.png",
+      "image": "raw/hotspot",
+      //      "image": "statichost.herokuapp.com/panoramagl/hotspot.png",
       "alpha": 0.8,
       "overAlpha": 1.0,
       "onClick": "lookAt(0.0, 90.0, true);"

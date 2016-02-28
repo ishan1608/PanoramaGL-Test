@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PanoramaGL-Test.iml" filepath="$PROJECT_DIR$/PanoramaGL-Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PanoramaGLTest.iml" filepath="$PROJECT_DIR$/PanoramaGLTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
